@@ -3,4 +3,10 @@ CONFIG += console c++11
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp
+SOURCES += \
+    bubble_sort.cpp \
+    runner.cpp \
+    insertion_sort.cpp
+
+HEADERS += \
+    sorting_algorithms.h
