@@ -7,7 +7,7 @@
 
 using namespace std;
 
-bool check_sorting(int arr[], int size) {
+bool CheckSorting(int arr[], int size) {
     for (int i = 0; i < ARRAY_SIZE-1; i++)
         if (arr[i] > arr[i+1])
             return false;
@@ -19,9 +19,10 @@ int main()
     int arr [ARRAY_SIZE];
     for (int i = 0; i < ARRAY_SIZE; i++)
         arr[i] = rand() % 100;
-    // buble_sort(arr, ARRAY_SIZE);
-    insertion_sort(arr, ARRAY_SIZE);
-    bool success = check_sorting(arr, ARRAY_SIZE);
+    // BubleSort(arr, ARRAY_SIZE);
+    // InsertionSort(arr, ARRAY_SIZE);
+    InsertionSortRecursive(arr, ARRAY_SIZE);
+    bool success = CheckSorting(arr, ARRAY_SIZE);
     string result = success ? "SUCCESS!" : "FAILURE!";
     cout << result << endl;
     if (!success) {
