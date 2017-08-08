@@ -1,7 +1,7 @@
-#include <iostream>
+#include "sorting_algorithms.h"
 
-void InsertionSort(int arr[], int size) {
-    for (int i = 1; i < size; i++) {
+void InsertionSort(std::vector<int>& arr) {
+    for (int i = 1; i < arr.size(); i++) {
         int key = arr[i];
         int j = i-1;
         while (j >= 0 && arr[j] > key) {
@@ -12,7 +12,7 @@ void InsertionSort(int arr[], int size) {
     }
 }
 
-void PutInPlace(int arr[], int size, int elem) {
+void PutInPlace(std::vector<int>& arr, int size, int elem) {
     for (int i = size-1; i > 0; i--) {
         if (elem > arr[i-1]) {
             arr[i] = elem;
@@ -23,7 +23,7 @@ void PutInPlace(int arr[], int size, int elem) {
     }
 }
 
-void InsertionSortRecursive(int arr[], int size) {
+void InsertionSortRecursive(std::vector<int>& arr, int size) {
     if (size > 1) {
         InsertionSortRecursive(arr, size-1);
         PutInPlace(arr, size, arr[size-1]);
