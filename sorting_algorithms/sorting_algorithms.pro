@@ -6,7 +6,8 @@ CONFIG -= qt
 SOURCES += \
     bubble_sort.cpp \
     runner.cpp \
-    insertion_sort.cpp
+    insertion_sort.cpp \
+    merge_sort.cpp
 
 HEADERS += \
     sorting_algorithms.h

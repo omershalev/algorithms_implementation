@@ -1,6 +1,6 @@
-#include <iostream>
-#include <stdlib.h>
 #include <string>
+#include <random>
+
 #include "sorting_algorithms.h"
 
 #define ARRAY_SIZE 10
@@ -14,15 +14,32 @@ bool CheckSorting(int arr[], int size) {
     return true;
 }
 
+bool CheckSorting(vector<int>& arr) {
+    for (int i = 0; i < arr.size()-1; i++)
+        if (arr[i] > arr[i+1])
+            return false;
+    return true;
+}
+
+int RandomNumber () { return (rand()%100); }
+
+void GenerateRandomVector(vector<int>& arr) {
+    generate(arr.begin(), arr.end(), RandomNumber);
+    cout << "Generated random vector is:" << endl;
+    for (int i = 0; i < arr.size(); i++)
+        cout << arr[i] << " ";
+    cout << endl;
+}
+
 int main()
 {
-    int arr [ARRAY_SIZE];
-    for (int i = 0; i < ARRAY_SIZE; i++)
-        arr[i] = rand() % 100;
-    // BubleSort(arr, ARRAY_SIZE);
-    // InsertionSort(arr, ARRAY_SIZE);
-    InsertionSortRecursive(arr, ARRAY_SIZE);
-    bool success = CheckSorting(arr, ARRAY_SIZE);
+    vector<int> arr(ARRAY_SIZE);
+    GenerateRandomVector(arr);
+//    BubleSort(arr);
+//    InsertionSort(arr);
+//    InsertionSortRecursive(arr, arr.size());
+    MergeSort(arr);
+    bool success = CheckSorting(arr);
     string result = success ? "SUCCESS!" : "FAILURE!";
     cout << result << endl;
     if (!success) {

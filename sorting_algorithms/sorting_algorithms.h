@@ -1,9 +1,15 @@
 #ifndef SORTING_ALGORITHMS_H
 #define SORTING_ALGORITHMS_H
 
-void BubleSort(int arr[], int size);
+#include <vector>
+#include <algorithm>
+#include <iostream>
 
-void InsertionSort(int arr[], int size);
-void InsertionSortRecursive(int arr[], int size);
+void BubleSort(std::vector<int>& arr);
+
+void InsertionSort(std::vector<int>& arr);
+void InsertionSortRecursive(std::vector<int>& arr, int size);
+
+void MergeSort(std::vector<int>& arr);
 
 #endif // SORTING_ALGORITHMS_H
