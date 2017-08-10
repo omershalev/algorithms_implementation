@@ -7,7 +7,8 @@ SOURCES += \
     bubble_sort.cpp \
     runner.cpp \
     insertion_sort.cpp \
-    merge_sort.cpp
+    merge_sort.cpp \
+    heap_sort.cpp
 
 HEADERS += \
     sorting_algorithms.h

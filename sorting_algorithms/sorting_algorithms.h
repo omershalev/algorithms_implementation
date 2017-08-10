@@ -12,4 +12,6 @@ void InsertionSortRecursive(std::vector<int>& arr, int size);
 
 void MergeSort(std::vector<int>& arr);
 
+void HeapSort(std::vector<int>& arr);
+
 #endif // SORTING_ALGORITHMS_H

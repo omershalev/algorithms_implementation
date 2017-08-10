@@ -37,8 +37,9 @@ int main()
     GenerateRandomVector(arr);
 //    BubleSort(arr);
 //    InsertionSort(arr);
-//    InsertionSortRecursive(arr, arr.size());
-    MergeSort(arr);
+//    InsertionSortRecursive(arr, arr.size());   
+//    MergeSort(arr);
+    HeapSort(arr);
     bool success = CheckSorting(arr);
     string result = success ? "SUCCESS!" : "FAILURE!";
     cout << result << endl;
