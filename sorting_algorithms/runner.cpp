@@ -1,5 +1,4 @@
 #include <string>
-#include <random>
 
 #include "sorting_algorithms.h"
 
@@ -40,7 +39,8 @@ int main()
 //    InsertionSortRecursive(arr, arr.size());   
 //    MergeSort(arr);
 //    HeapSort(arr);
-    QuickSort(arr);
+//    QuickSort(arr);
+    RandomQuickSort(arr);
     bool success = CheckSorting(arr);
     string result = success ? "SUCCESS!" : "FAILURE!";
     cout << result << endl;

@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
+#include <random>
 
 void BubleSort(std::vector<int>& arr);
 
@@ -15,5 +16,6 @@ void MergeSort(std::vector<int>& arr);
 void HeapSort(std::vector<int>& arr);
 
 void QuickSort(std::vector<int>& arr);
+void RandomQuickSort(std::vector<int>& arr);
 
 #endif // SORTING_ALGORITHMS_H
