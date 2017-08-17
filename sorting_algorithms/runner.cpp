@@ -39,7 +39,8 @@ int main()
 //    InsertionSort(arr);
 //    InsertionSortRecursive(arr, arr.size());   
 //    MergeSort(arr);
-    HeapSort(arr);
+//    HeapSort(arr);
+    QuickSort(arr);
     bool success = CheckSorting(arr);
     string result = success ? "SUCCESS!" : "FAILURE!";
     cout << result << endl;

@@ -8,7 +8,8 @@ SOURCES += \
     runner.cpp \
     insertion_sort.cpp \
     merge_sort.cpp \
-    heap_sort.cpp
+    heap_sort.cpp \
+    quick_sort.cpp
 
 HEADERS += \
     sorting_algorithms.h
