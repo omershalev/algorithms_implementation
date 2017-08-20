@@ -40,7 +40,8 @@ int main()
 //    MergeSort(arr);
 //    HeapSort(arr);
 //    QuickSort(arr);
-    RandomQuickSort(arr);
+//    RandomQuickSort(arr);
+    BucketSort(arr);
     bool success = CheckSorting(arr);
     string result = success ? "SUCCESS!" : "FAILURE!";
     cout << result << endl;

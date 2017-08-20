@@ -18,4 +18,6 @@ void HeapSort(std::vector<int>& arr);
 void QuickSort(std::vector<int>& arr);
 void RandomQuickSort(std::vector<int>& arr);
 
+void BucketSort(std::vector<int>& arr);
+
 #endif // SORTING_ALGORITHMS_H
